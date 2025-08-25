@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Business Blog Card | devChallenges.io</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Poppins', 'Nunito Sans', 'Inter', sans-serif;
+        background: linear-gradient(90deg,rgba(58, 34, 97, 1) 0%, rgba(114, 41, 163, 1) 57%, rgba(156, 82, 141, 1) 100%);
+      }
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+        width: 100%;
+      }
+      .author-info a {
+        color: rgb(55, 65, 81);
+        text-decoration: underline;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        width: 400px;
+        height: 520px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.2);
+        background: white;
+      }
+      .card-top {
+        width: 100%;
+      }
+      .card-hero-img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .card-hero-overlay {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: relative;
+        transform: translateY(-100%);
+      }
+      .card-middle {
+        width: 100%;
+        margin-top: -100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+      }
+      hr {
+        width: 100%;
+        height: 1px;
+        border: 1px solid #33333322;
+      }
+      .card-title {
+        width: 100%;
+        line-height: 30px;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .card-description {
+        width: 100%;
+        line-height: 20px;
+        color: darkslategrey;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .card-bottom {
+        width: 100%;
+        display: flex;
+        padding: 0px 30px 10px 30px;
+        align-items: center;
+        gap: 10px;
+      }
+      .card-author-img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid whitesmoke;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      }
+      .card-author-info-container {
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 3px;
+      }
+      .card-author-name {
+        font-size: 16px;
+        width: 100%;
+      }
+      .card-author-info {
+        font-size: 14px;
+        font-weight: 500;
+        color: darkslategrey;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="author-info">
+      Coded by <a href="#">Neonwaac</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+    <section class="container">
+      <div class="card">
+        <div class="card-top">
+          <img class="card-hero-img" src="./resources/hero-image-1.jpg" />
+          <img class="card-hero-overlay" src="./resources/white-overlay.svg" />
+        </div>
+        <div class="card-middle">
+          <h1 class="card-title">Perfect solution for small business.</h1>
+          <p class="card-description">
+            Small bussineses needs to generate leads to grow. You can use tools
+            like ringy
+          </p>
+        </div>
+        <hr />
+        <div class="card-bottom">
+          <img
+            class="card-author-img"
+            src="./resources/avatar-image-business-card.png"
+          />
+          <div class="card-author-info-container">
+            <h2 class="card-author-name">Amy Burgess</h2>
+            <h3 class="card-author-info">Custom Manager, Slution Oy</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
